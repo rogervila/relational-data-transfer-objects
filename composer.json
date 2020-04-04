@@ -18,7 +18,8 @@
         "php": "^7.2.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8.0"
+        "phpunit/phpunit": "^8.0",
+        "rogervila/php-sonarqube-scanner": "^1.0"
     },
     "autoload": {
         "psr-4": {
