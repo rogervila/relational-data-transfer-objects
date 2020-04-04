@@ -15,9 +15,4 @@ before_script:
 
 script:
   - vendor/bin/phpunit
-  - sonar-scanner
-addons:
-  sonarcloud:
-    organization: rogervila-github
-    token:
-      secure: U+phN6P0cSGdDjtrYwKzZ4NvznI5lA7eZUBlNMpV+8vESWqh8c11VNgfsguDDo5e4t66xuFd5jGC7AJLC6OI5ZdY/8DYCInl4ZweHvK1ClmopCz9m3CzB8f7irR3FnB6DYYaMS1A2tox92iG+6xSRyBE8n5OtERjPm40mlQI6Uxjy7jqtE5j+3lsqUX1gY4eP9zTjjYsQKMs/vp3tQcEm7Slr5r6F2BTg0Pfvc5mPiGFBJXX682nb7lqBJC635kAzK33X5G4gx0xSVGWVkYXewzta2n4FPVbpMvN/g9on8LJhDL4DReS8rwiQCAG3qyc7BbzaewRoNxxQ4tMLx8xAOgnFntGq5WJVVjX+xGgzA5G+l5eQWlYNL5oWjETpoPONoqwMV+HhztfZNal2bmD7MydS1dq+oYdX/QBBKHSQlX+VzmSity09LwsN1Jn0sGhIwzy9CztIVi9YWxZrFAwHF9Z5TKQFevKvnhfODR/KnRM4iI+iSJDhKUdI1hnMrhMt6sT+b22Mr1QuykUXKkn8ilNJocO+oGiEWy2CinTLxoi9lQArV4Vq5Nl2QoA+y7D9aS02lUb/vb/NlPLyq8TYZkoUiU5VNmF71hIllOC8zGttBlHHPUr8RFFmIFqRyn8VTKIPEsdFAWHLo05Yeax4v5YqQSEtAitWEMiv4Z/G84=
+  - vendor/bin/sonar-scanner -Dsonar.login=$SONAR_LOGIN
