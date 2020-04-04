@@ -15,10 +15,10 @@ before_script:
 
 script:
   - vendor/bin/phpunit
-#  - sonar-scanner -Dsonar.projectKey=rogervila_relational-data-transfer-objects -Dsonar.sources=. -Dsonar.exclusions='vendor/**, tests/**' -Dsonar.php.tests.reportPath=junit-logfile.xml -Dsonar.php.coverage.reportPaths=clover.xml
+  - sonar-scanner -Dsonar.projectKey=rogervila_relational-data-transfer-objects -Dsonar.sources=. -Dsonar.exclusions='vendor/**, tests/**' -Dsonar.php.tests.reportPath=junit-logfile.xml -Dsonar.php.coverage.reportPaths=clover.xml
 
-#addons:
-#  sonarcloud:
-#    organization: "rogervila-github"
-#    token:
-#      secure: "6EtODh4KA7RkejGI9Lq7C57BdzB/tfdqKujQU2I7YIDLSfwYkIRVFVGfo1ah9pfYI0RGRuPz5PWEZqnApbMMCnBPT6PutHf19DEbK1TFqcQR1JHp2AAuXB71wLiYyi0hdBBf+65k2UeiOnS0JSPyxAZuN/nVTMwxGVdVFDzp0q7XHeA7zL+jz5K3vkepbND+AWeHYklAelYEagIuO5eWEyZhZKR8nNh1M2JQnddqZBPMNJKZNK/YH9DJPYzaQIFPXaAXsQaBOLhSdHWEQNPcwswK0lL7fTskX2xQZ0cFTR/rZP7ZYXq2lVSNPJA659sjzfrrAlxKp7eER1Y+QuyNPW1bFJx8W73OkSRwB9QIB1zVdjR8H6TIRzk7j8TGsol6ISrxH76UNOdJh/UDQWcbAAL2x7OQm+l122DZzoGgrUsD7F9btc4riKNoIEIKPSmFTRXWzUIETa3uI0jCZKg+Z2+RQQTMn+pmm/i5javClphHd82LgwjvFfnRiND5fxzb0+0sZ72tltqUzOuWTTvhslUoTRF0ff5tX83VI5g/Jokrp+sNXZEcvXby7nnpvhwep8XzWrfQ+DjdAXvYUGtWVVeUGcyOnDEe/8Y0w5NDDBGn5UwxxmUeX78IDbbcli1W70+Bq5qN4/ocjvWdw/TaHykbKAXLGarnLVQAj/Q68Wg="
+addons:
+  sonarcloud:
+    organization: "rogervila-github"
+    token:
+      secure: "F/0Ob4pkuhC9iNo6foWq+7IL/y03C3NEX9nZ0v7dWFTaS+swcU4jXli9EjiLXnRomtb+KJrUtixsgfCbQFvYMObbK/gVO4KQ8BlYyMSUTxqlgnvI1jy2RwcScQXoQl0kCPtrO/ZVuJ8LRRiaPrWQW3qhCmSMfND/Y2g8u2WKLFu2tvaxNyevt5sBnAYjriE1HC4UwxChckaQcmQ/1Jsfb5aUiffMjBZIo8MKu5S0SttjlIxwKkou9rODQJmFZqQxtnJUhk6YuOHoktjW6ClnukTyO+xC4c6l+POp0BOE4wnHCHDBgyPT1G0oWhGAbddoNWdXRVj0wLVm0c7bfUOlKHkwl5F0zA73PiJDYZM/ozaRqK88kEmeUK4jU2ICCBY/UwDGUafejloRovFGzegKnAINHeJvyTic3bNYHn2JdFbtSqfbT4Q1dWW44ODQgbgpbQPbG5XZTLkggrZnQMEnkYd/Eetx7TiT8LZFs/2iMZlMn7nLDx5sCFIL+Mz4q0r2+xnNM/psAeLUp3VV4Y2FuPpXgwnGQ5FIMRRsfehZ3UE5aKmDN0R+AI/lbjWQZD5ehungmKLrfcyydrclYFRmPZFwJzuaq0j62Sb1mNfUg9SY6PzSOLKbHjnM7AxyOCKmpjgNQg+vZeB2Q9L1yPcBvdn1n/UqfBq2/rwRgpX00Sk="
