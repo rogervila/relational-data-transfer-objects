@@ -1,6 +1,7 @@
 language: php
 
 php:
+  - nightly
   - 7.4
   - 7.3
   - 7.2
@@ -15,4 +16,4 @@ before_script:
 
 script:
   - vendor/bin/phpunit
-  - vendor/bin/sonar-scanner -Dsonar.login=$SONAR_LOGIN
+  - if [[ ${TRAVIS_PHP_VERSION:0:3} == "7.4" ]]; then vendor/bin/sonar-scanner -Dsonar.login=$SONAR_LOGIN; fi
